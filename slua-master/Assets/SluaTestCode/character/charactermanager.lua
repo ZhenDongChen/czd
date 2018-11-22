@@ -2,7 +2,7 @@
 local CharacterManager =  CharacterManager or {}
 
 
-local function CharacterManager.init()
+function CharacterManager:init()
 
 	print("CharacterManager.init")
 

@@ -1,7 +1,7 @@
 
 local bagmanager = bagmanager or {}
 
-local function bagmanager.init()
+function bagmanager:init()
 
 	print("bagmanager.init")
 

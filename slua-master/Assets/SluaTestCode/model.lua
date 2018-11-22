@@ -1,4 +1,4 @@
 return{
-	"bagmanager",
-	"charactermanager",
+	"bag.bagmanager",
+	"character.charactermanager",
 }

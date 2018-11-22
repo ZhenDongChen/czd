@@ -10,7 +10,7 @@ local function init_model()
 	for _, modelItem in pairs(model) do
 		print(modelItem)
 		local mod = require(modelItem)
-		mod.init()
+		mod:init()
 	end
 
 end

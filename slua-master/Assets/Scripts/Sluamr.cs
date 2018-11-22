@@ -26,7 +26,7 @@ public class SluaClass
     byte[] LoaderFile(string name, ref string outputFileName)
     {
         byte[] tempStr = null;
-        string path = Application.dataPath + "/SluaTestCode/" + name+".lua";
+        string path = Application.dataPath + "/SluaTestCode/" + name.Replace('.', '/') + ".lua";
 
         if (File.Exists(path))
         {
