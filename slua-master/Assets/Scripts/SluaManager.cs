@@ -10,7 +10,18 @@ public class SluaManager : MonoBehaviour
 
     void Start()
     {
-        Sluamr.instance.Init();
+
+        
+
+        SluaClass.instance.Init();
+        if (SluaClass.instance.init != null)
+            SluaClass.instance.init.call();
     }
- 
+
+
+     void Update()
+    {
+        if (SluaClass.instance.update != null)
+            SluaClass.instance.update.call();
+    }
 }

@@ -1,0 +1,2 @@
+local ScriptParameter = {}
+return ScriptParameter;

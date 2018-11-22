@@ -4,35 +4,32 @@ using UnityEngine;
 using SLua;
 using System.IO;
 
-public class Sluamr 
+public class SluaClass
 {
-    public static Sluamr instance = new Sluamr();
+    public static SluaClass instance = new SluaClass();
+    public LuaState luaState = new LuaState(); //申明一个lua的状态机，就是相当一个协成
+
+    public  LuaFunction init;
+    public  LuaFunction update;
+
     private readonly LuaSvr lua = new LuaSvr();
 
     public void Init()
     {
-        LuaState.main.loaderDelegate = LoaderFile;
-        CreateTable();
-        lua.init((progress) =>
+        luaState.loaderDelegate = LoaderFile;
+        lua.init(null,() =>
         {
-
-        }, SluaStart);
-    }
-
-
-    public LuaTable CreateTable()
-    {
-        return new LuaTable(LuaSvr.mainState); 
+            SluaStart();
+        });
     }
 
     byte[] LoaderFile(string name, ref string outputFileName)
     {
         byte[] tempStr = null;
-        string path = Application.dataPath + "/../../../" + "SluaTestCode/" + name+".lua";
+        string path = Application.dataPath + "/SluaTestCode/" + name+".lua";
 
         if (File.Exists(path))
         {
-            Debug.Log("file is Exists");
             tempStr = File.ReadAllBytes(path);
         }
         return tempStr;
@@ -40,12 +37,17 @@ public class Sluamr
     // Use this for initialization
     void SluaStart()
     {
-        SLua.LuaTable main = (LuaTable)LuaSvr.mainState.doFile("main");
+        luaState.doFile("main");
 
-        (main["init"] as LuaFunction).call();
+        init = luaState.getFunction("init");
 
-        (main["uodate"] as LuaFunction).call();
+        update = luaState.getFunction("Update");
+
+        
+
     }
+
+
 
 
    
