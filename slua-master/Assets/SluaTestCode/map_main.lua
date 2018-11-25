@@ -1,17 +1,7 @@
 
-
-local require = require
-
-local model = require("model")
-
-
 local function init_model()
 	
-	for _, modelItem in pairs(model) do
-		print(modelItem)
-		local mod = require(modelItem)
-		mod:init()
-	end
+	modelManager:modelManagerInit()
 
 end
 
@@ -26,6 +16,7 @@ end
 
 function Update()
 
+	modelManager:modelManagerupdate()
 	--print("Update init")
 
 end

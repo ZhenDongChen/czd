@@ -16,12 +16,15 @@ public class SluaManager : MonoBehaviour
         SluaClass.instance.Init();
         if (SluaClass.instance.init != null)
             SluaClass.instance.init.call();
+
+           if (SluaClass.instance.update != null)
+             SluaClass.instance.update.call();
     }
 
 
-     void Update()
+    void Update()
     {
-        if (SluaClass.instance.update != null)
-            SluaClass.instance.update.call();
+        //if (SluaClass.instance.update != null)
+           // SluaClass.instance.update.call();
     }
 }
