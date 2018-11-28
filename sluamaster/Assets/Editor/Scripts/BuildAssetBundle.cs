@@ -33,9 +33,15 @@ public class BuildAssetBundle
     }
 
     /// <summary>
-    /// 
+    /// 获取所有的bundle资源的绝对路径
     /// </summary>
-   static void GetAssetsRecursively(string srcFolder,string searchPattern, string dstFolder,  string prefix, string suffix, ref Dictionary<string, string> assets)
+    /// <param name="srcFolder">查找的文件路径</param>
+    /// <param name="searchPattern">查找文件的类型</param>
+    /// <param name="dstFolder">bundle文件的分类文件夹</param>
+    /// <param name="prefix">前缀</param>
+    /// <param name="suffix">后缀</param>
+    /// <param name="assets">所有资源的路径</param>
+   static void GetAssetsRecursively(string srcFolder,string searchPattern, string dstFolder, string prefix, string suffix, ref Dictionary<string, string> assets)
     {
         string searchFolder = StandardlizePath(srcFolder);
         if (!Directory.Exists(searchFolder))
@@ -61,6 +67,7 @@ public class BuildAssetBundle
             if (string.IsNullOrEmpty(prefix))
             {
                 dstFile = Path.Combine(dstFolder, string.Format("{0}.{1}", Path.GetFileNameWithoutExtension(srcFile), suffix));
+                Debug.Log(dstFile);
             }
             else
             {
@@ -80,6 +87,10 @@ public class BuildAssetBundle
 
     }
 
+    /// <summary>
+    /// 设置所有文件的bundle名字
+    /// </summary>
+    /// <param name="assets"></param>
     static void SetAssetBundleName(Dictionary<string, string> assets)
     {
 
@@ -101,6 +112,11 @@ public class BuildAssetBundle
         }
     }
 
+    /// <summary>
+    /// 打包所有的bundle
+    /// </summary>
+    /// <param name="target"></param>
+    /// <param name="options"></param>
     static void BuildAssetBundles(BuildTarget target, BuildAssetBundleOptions options = BuildAssetBundleOptions.DeterministicAssetBundle | BuildAssetBundleOptions.ChunkBasedCompression)
     {
         string dir = GetBundleSaveDir(target);
@@ -112,6 +128,37 @@ public class BuildAssetBundle
         BuildPipeline.BuildAssetBundles(dir, options,target);
 
     }
+
+    [MenuItem("Tools/test")]
+    public static void SaveDependency()
+    {
+        string dir = GetBundleSaveDir(BuildTarget.StandaloneWindows64);
+        Debug.Log(dir.TrimEnd('/'));
+        string depfile = dir.Substring(dir.TrimEnd('/').LastIndexOf("/") + 1);
+        Debug.Log(depfile);
+        string path = GetBundleSavePath(BuildTarget.StandaloneWindows64, depfile);
+        AssetBundle db = AssetBundle.LoadFromFile(path);
+    }
+
+    public static string GetBundleSavePath(BuildTarget target,string relativePath)
+    {
+        string path = string.Empty;
+        switch (target)
+        {
+            case BuildTarget.Android:
+                path = string.Format("{0}/../../{1}/{2}", Application.dataPath, GetPlatfomrPath(target), relativePath);
+
+                break;
+            case BuildTarget.StandaloneLinux64:
+                path = string.Format("{0}/../../{1}/{2}", Application.dataPath, GetPlatfomrPath(target), relativePath);
+                break;
+            case BuildTarget.iOS:
+                path = string.Format("{0}/../../{1}/{2}", Application.dataPath, GetPlatfomrPath(target), relativePath);
+                break;
+        }
+        return path;
+    }
+
 
     public static string GetBundleSaveDir(BuildTarget target)
     {
