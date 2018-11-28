@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 2314451277
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: ui/cube.bundle
+      Dependencies: {}
+    Info_1:
+      Name: ui/cube1.bundle
+      Dependencies: {}
+    Info_2:
+      Name: ui/cube2.bundle
+      Dependencies: {}
+    Info_3:
+      Name: ui/cube3.bundle
+      Dependencies: {}
+    Info_4:
+      Name: ui/cube4.bundle
+      Dependencies: {}
+    Info_5:
+      Name: ui/cube5.bundle
+      Dependencies: {}
+    Info_6:
+      Name: ui/cube6.bundle
+      Dependencies: {}
+    Info_7:
+      Name: ui/cube7.bundle
+      Dependencies: {}

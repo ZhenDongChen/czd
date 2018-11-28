@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 410145437
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 99bcaa9b5add848b8b5f6ae26eefba57
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 92cee873137980c3d5ff7e1411ec2c9c
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetBundleFloder/Character/Cube1.prefab
+Dependencies: []
