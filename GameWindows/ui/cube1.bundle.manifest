@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 410145437
+CRC: 721046229
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 99bcaa9b5add848b8b5f6ae26eefba57
+    Hash: 7226ae6aea50a202ddf6ec06e6f1ef84
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 92cee873137980c3d5ff7e1411ec2c9c
+    Hash: c15c595f80747130a8d34dfc8ec48e63
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -21,10 +21,9 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 43
   Script: {instanceID: 0}
-- Class: 48
-  Script: {instanceID: 0}
 - Class: 65
   Script: {instanceID: 0}
 Assets:
 - Assets/AssetBundleFloder/Character/Cube1.prefab
-Dependencies: []
+Dependencies:
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/cube 1.bundle

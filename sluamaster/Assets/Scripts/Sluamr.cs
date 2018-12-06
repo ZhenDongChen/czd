@@ -102,7 +102,7 @@ public class SluaClass
 
         foreach (DirectoryInfo item in targetpathDirectorinfo.GetDirectories())
         {
-            Debug.Log("DirectoryInfo" + item.Name);
+           // Debug.Log("DirectoryInfo" + item.Name);
             if (item.Name == "SluaTestCode")
             {
                 allFileDirectors_list.Add(item);

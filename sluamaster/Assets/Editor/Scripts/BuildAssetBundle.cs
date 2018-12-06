@@ -27,6 +27,8 @@ public class BuildAssetBundle
     {
         string targetBuildPath = Application.dataPath + "/AssetBundleFloder/Character";
         GetAssetsRecursively(targetBuildPath , "*.prefab","ui/", null,"bundle",ref allbundlesName);
+        SetAssetbundleNameDenpency(allbundlesName,new string[] { ".shader" }, "shader/");
+        SetAssetbundleNameDenpency(allbundlesName, new string[] { ".mat" }, "Materil/");
         SetAssetBundleName(allbundlesName);
         BuildAssetBundles(BuildTarget.StandaloneWindows64);
         //AssetDatabase.get
@@ -98,7 +100,7 @@ public class BuildAssetBundle
         foreach (KeyValuePair<string,string> item in assets)
         {
             string tempstring = StandardlizePath(item.Key);
-            Debug.Log(item.Key);
+           // Debug.Log(item.Key);
             if (!File.Exists(tempstring))
             {
                 Debug.Log("this file is not exsist "+ item.Key);
@@ -108,6 +110,47 @@ public class BuildAssetBundle
             if (importer.assetBundleName == null || importer.assetBundleName != item.Value)
             {
                 importer.assetBundleName = item.Value;
+            }
+        }
+    }
+
+    /// <summary>
+    /// 设置所有打包文件的依赖文件
+    /// </summary>
+    /// <param name="assets"></param>
+    /// <param name="depFormat"></param>
+    /// <param name="depPath"></param>
+    /// <param name="bPrefix"></param>
+    static void SetAssetbundleNameDenpency(Dictionary<string,string> assets,string[] depFormat,string depPath)
+    {
+        AssetImporter import = null;
+
+        foreach (KeyValuePair<string,string> item in assets)
+        {
+            string temp = "Assets" + item.Key.Substring(Application.dataPath.Length);
+            Debug.Log(temp);//Debug.Log(dependencies);
+            string[] dependencies = AssetDatabase.GetDependencies("Assets" + item.Key.Substring(Application.dataPath.Length));
+            //Debug.Log(dependencies);
+            foreach (string sdep in dependencies)
+            {
+                Debug.Log("dependencies :"+sdep);
+                foreach (var format in depFormat)
+                {
+                    if (sdep.EndsWith(format))
+                    {
+                       
+                        import = AssetImporter.GetAtPath(sdep);
+                        if (import == null) return;
+                        Debug.Log(string.Format("{0}{1}.bundle", depPath, Path.GetFileNameWithoutExtension(sdep.ToLower())));
+                        string bundleName = string.Format("{0}{1}.bundle", depPath, Path.GetFileNameWithoutExtension(sdep.ToLower()));
+
+                        if (import != null)
+                        {
+                            Debug.Log(string.Format("{0}:{1}", format, bundleName));
+                            import.assetBundleName = bundleName;
+                        }
+                    }
+                }
             }
         }
     }
@@ -133,9 +176,9 @@ public class BuildAssetBundle
     public static void SaveDependency()
     {
         string dir = GetBundleSaveDir(BuildTarget.StandaloneWindows64);
-        Debug.Log(dir.TrimEnd('/'));
+       // Debug.Log(dir.TrimEnd('/'));
         string depfile = dir.Substring(dir.TrimEnd('/').LastIndexOf("/") + 1);
-        Debug.Log(depfile);
+       // Debug.Log(depfile);
         string path = GetBundleSavePath(BuildTarget.StandaloneWindows64, depfile);
         AssetBundle db = AssetBundle.LoadFromFile(path);
     }
@@ -179,7 +222,7 @@ public class BuildAssetBundle
 
     }
 
-    static string GetPlatfomrPath(BuildTarget target)
+    public  static string GetPlatfomrPath(BuildTarget target)
     {
         string platformPath = string.Empty;
         switch (target)

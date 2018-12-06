@@ -1,28 +1,61 @@
 ManifestFileVersion: 0
-CRC: 2314451277
+CRC: 4239482321
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
       Name: ui/cube.bundle
-      Dependencies: {}
+      Dependencies:
+        Dependency_0: materil/cube.bundle
     Info_1:
       Name: ui/cube1.bundle
-      Dependencies: {}
+      Dependencies:
+        Dependency_0: materil/cube 1.bundle
     Info_2:
       Name: ui/cube2.bundle
-      Dependencies: {}
+      Dependencies:
+        Dependency_0: materil/cube 2.bundle
     Info_3:
       Name: ui/cube3.bundle
-      Dependencies: {}
+      Dependencies:
+        Dependency_0: materil/cube 3.bundle
     Info_4:
       Name: ui/cube4.bundle
-      Dependencies: {}
+      Dependencies:
+        Dependency_0: materil/cube 4.bundle
     Info_5:
       Name: ui/cube5.bundle
-      Dependencies: {}
+      Dependencies:
+        Dependency_0: materil/cube 5.bundle
     Info_6:
       Name: ui/cube6.bundle
       Dependencies: {}
     Info_7:
       Name: ui/cube7.bundle
       Dependencies: {}
+    Info_8:
+      Name: shader/tets.bundle
+      Dependencies: {}
+    Info_9:
+      Name: materil/cube.bundle
+      Dependencies:
+        Dependency_0: shader/tets.bundle
+    Info_10:
+      Name: materil/cube 1.bundle
+      Dependencies:
+        Dependency_0: shader/tets.bundle
+    Info_11:
+      Name: materil/cube 2.bundle
+      Dependencies:
+        Dependency_0: shader/tets.bundle
+    Info_12:
+      Name: materil/cube 3.bundle
+      Dependencies:
+        Dependency_0: shader/tets.bundle
+    Info_13:
+      Name: materil/cube 4.bundle
+      Dependencies:
+        Dependency_0: shader/tets.bundle
+    Info_14:
+      Name: materil/cube 5.bundle
+      Dependencies:
+        Dependency_0: shader/tets.bundle
