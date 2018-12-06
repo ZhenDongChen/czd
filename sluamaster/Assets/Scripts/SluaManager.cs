@@ -14,7 +14,9 @@ public class SluaManager : MonoBehaviour
         if (SluaClass.instance.init != null)
             SluaClass.instance.init.call();
 
-           if (SluaClass.instance.update != null)
-             SluaClass.instance.update.call();
+        if (SluaClass.instance.update != null)
+           SluaClass.instance.update.call();
+
+        AssetBundleLoader.Instance.LoadUIAssetBundle("cube");
     }
 }

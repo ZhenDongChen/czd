@@ -30,7 +30,7 @@ public class BuildAssetBundle
         SetAssetbundleNameDenpency(allbundlesName,new string[] { ".shader" }, "shader/");
         SetAssetbundleNameDenpency(allbundlesName, new string[] { ".mat" }, "Materil/");
         SetAssetBundleName(allbundlesName);
-        BuildAssetBundles(BuildTarget.StandaloneWindows64);
+        BuildAssetBundles(BuildTarget.StandaloneLinux64);
         //AssetDatabase.get
     }
 
@@ -176,11 +176,85 @@ public class BuildAssetBundle
     public static void SaveDependency()
     {
         string dir = GetBundleSaveDir(BuildTarget.StandaloneWindows64);
-       // Debug.Log(dir.TrimEnd('/'));
+        Debug.Log(dir.TrimEnd('/'));
         string depfile = dir.Substring(dir.TrimEnd('/').LastIndexOf("/") + 1);
-       // Debug.Log(depfile);
-        string path = GetBundleSavePath(BuildTarget.StandaloneWindows64, depfile);
-        AssetBundle db = AssetBundle.LoadFromFile(path);
+        Debug.Log(depfile.TrimEnd('/'));
+        string path = GetBundleSavePath(BuildTarget.StandaloneWindows64, depfile.TrimEnd('/'));
+        Debug.Log(path);
+        AssetBundle ab = AssetBundle.LoadFromFile(path);
+
+        AssetBundleManifest mainfest = (AssetBundleManifest)ab.LoadAsset("AssetBundleManifest");
+
+        ab.Unload(false);
+
+        //保存所有的依赖文件
+        Dictionary<string, List<string>> dic = new Dictionary<string, List<string>>();
+
+        foreach (string asset in mainfest.GetAllAssetBundles())
+        {
+            //Debug.Log("asset:"+asset);
+            List<string> list = new List<string>();
+            string[] deps = mainfest.GetDirectDependencies(asset);
+            foreach (string dep in deps)
+            {
+               // Debug.Log("dep:"+dep);
+                list.Add(dep);
+            }
+            if (deps.Length > 0)
+                dic[asset] = list;
+            else if (dic.ContainsKey(asset))
+                dic.Remove(asset);
+        }
+
+        WriteDependenceConfig(BuildTarget.StandaloneWindows64,dic);
+
+    }
+
+    static void WriteDependenceConfig(BuildTarget target, Dictionary<string, List<string>> m_Denpendcies)
+    {
+        string fileName = GetBundleSaveDir(target) + "config/dependency";
+
+        Directory.CreateDirectory(Path.GetDirectoryName(fileName));
+
+        FileStream fs = new FileStream(fileName,FileMode.Create,FileAccess.ReadWrite);
+
+        BinaryWriter w = new BinaryWriter(fs);
+
+        w.Write(m_Denpendcies.Count);
+
+        foreach (KeyValuePair<string,List<string>> item in m_Denpendcies)
+        {
+            w.Write(item.Key);
+            w.Write(item.Value.Count);
+            foreach (string s in item.Value)
+            {
+                w.Write(s);
+            }
+        }
+
+        w.Close();
+        fs.Close();
+
+        if (true)
+        {
+            using (StreamWriter sw = File.CreateText(fileName + "text"))
+            {
+                sw.WriteLine("size = " + m_Denpendcies.Count);
+
+                foreach (KeyValuePair<string, List<string>> pair in m_Denpendcies)
+                {
+                    sw.WriteLine(pair.Key);
+                    sw.WriteLine(pair.Value.Count);
+                    foreach (string s in pair.Value)
+                    {
+                        sw.WriteLine(s);
+                    }
+                }
+                sw.Close();
+            }
+
+        }
+
     }
 
     public static string GetBundleSavePath(BuildTarget target,string relativePath)
@@ -192,7 +266,7 @@ public class BuildAssetBundle
                 path = string.Format("{0}/../../{1}/{2}", Application.dataPath, GetPlatfomrPath(target), relativePath);
 
                 break;
-            case BuildTarget.StandaloneLinux64:
+            case BuildTarget.StandaloneWindows64:
                 path = string.Format("{0}/../../{1}/{2}", Application.dataPath, GetPlatfomrPath(target), relativePath);
                 break;
             case BuildTarget.iOS:

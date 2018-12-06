@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1666758759
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b8c7eb4221d39719d5af5ce7e5399234
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: cc7b69794a2bdada249e557ebbfded10
+HashAppended: 0
+ClassTypes:
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetBundleFloder/Character/Shader/Tets.shader
+Dependencies: []
