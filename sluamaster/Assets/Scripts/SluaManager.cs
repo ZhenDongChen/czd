@@ -6,7 +6,15 @@ using System.IO;
 
 public class SluaManager : MonoBehaviour
 {
-   
+
+    public static SluaManager Instance;
+
+    public Dictionary<string, List<string>> ttt = new Dictionary<string, List<string>>(); 
+
+    void Awake()
+    {
+        Instance = this;
+    }
 
     void Start()
     {
@@ -17,6 +25,19 @@ public class SluaManager : MonoBehaviour
         if (SluaClass.instance.update != null)
            SluaClass.instance.update.call();
 
-        AssetBundleLoader.Instance.LoadUIAssetBundle("cube");
+        List<string> aaa = new List<string>();
+        aaa.Add("aaaa");
+        aaa.Add("bbb");
+        ttt.Add("aaaaa", aaa);
+
+        List<string> nnn = new List<string>();
+
+        ttt.TryGetValue("aaaaa", out nnn);
+
+        foreach (var item in nnn)
+        {
+            Debug.Log(item);
+        }
+       AssetBundleLoader.Instance.LoadUIAssetBundle("cube1");
     }
 }

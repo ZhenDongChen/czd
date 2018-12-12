@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1719987499
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2c88d74f0aa1641eae488cfb99cb543a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c1642440719609290a7e09a50a7286f4
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Texture/Background_Banquet.jpg
+Dependencies: []

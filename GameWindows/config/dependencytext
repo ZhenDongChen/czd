@@ -1,22 +1,27 @@
 size = 12
 materil/cube 1.bundle
-1
+2
 shader/tets.bundle
+texture/background_dailyonline.bundle
 materil/cube 2.bundle
-1
+2
 shader/tets.bundle
+texture/background_exchange.bundle
 materil/cube 3.bundle
-1
+2
 shader/tets.bundle
+texture/background_exp.bundle
 materil/cube 4.bundle
-1
+2
 shader/tets.bundle
+texture/background_illustratedhandbook.bundle
 materil/cube 5.bundle
 1
 shader/tets.bundle
 materil/cube.bundle
-1
+2
 shader/tets.bundle
+texture/background_banquet.bundle
 ui/cube.bundle
 1
 materil/cube.bundle

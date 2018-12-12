@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3103886735
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f9f2f642c1d5694991c9bd7b561104d5
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c1642440719609290a7e09a50a7286f4
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Texture/Background_IllustratedHandbook.jpg
+Dependencies: []

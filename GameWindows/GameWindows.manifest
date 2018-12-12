@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 4239482321
+CRC: 1661384822
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -39,23 +39,43 @@ AssetBundleManifest:
       Name: materil/cube.bundle
       Dependencies:
         Dependency_0: shader/tets.bundle
+        Dependency_1: texture/background_banquet.bundle
     Info_10:
       Name: materil/cube 1.bundle
       Dependencies:
         Dependency_0: shader/tets.bundle
+        Dependency_1: texture/background_dailyonline.bundle
     Info_11:
       Name: materil/cube 2.bundle
       Dependencies:
         Dependency_0: shader/tets.bundle
+        Dependency_1: texture/background_exchange.bundle
     Info_12:
       Name: materil/cube 3.bundle
       Dependencies:
         Dependency_0: shader/tets.bundle
+        Dependency_1: texture/background_exp.bundle
     Info_13:
       Name: materil/cube 4.bundle
       Dependencies:
         Dependency_0: shader/tets.bundle
+        Dependency_1: texture/background_illustratedhandbook.bundle
     Info_14:
       Name: materil/cube 5.bundle
       Dependencies:
         Dependency_0: shader/tets.bundle
+    Info_15:
+      Name: texture/background_banquet.bundle
+      Dependencies: {}
+    Info_16:
+      Name: texture/background_exp.bundle
+      Dependencies: {}
+    Info_17:
+      Name: texture/background_illustratedhandbook.bundle
+      Dependencies: {}
+    Info_18:
+      Name: texture/background_dailyonline.bundle
+      Dependencies: {}
+    Info_19:
+      Name: texture/background_exchange.bundle
+      Dependencies: {}

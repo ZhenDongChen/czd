@@ -29,8 +29,10 @@ public class BuildAssetBundle
         GetAssetsRecursively(targetBuildPath , "*.prefab","ui/", null,"bundle",ref allbundlesName);
         SetAssetbundleNameDenpency(allbundlesName,new string[] { ".shader" }, "shader/");
         SetAssetbundleNameDenpency(allbundlesName, new string[] { ".mat" }, "Materil/");
+        SetAssetbundleNameDenpency(allbundlesName, new string[] { ".jpg" }, "Texture/");
+        SetAssetbundleNameDenpency(allbundlesName, new string[] { ".png" }, "Texture/");
         SetAssetBundleName(allbundlesName);
-        BuildAssetBundles(BuildTarget.StandaloneLinux64);
+        BuildAssetBundles(BuildTarget.StandaloneWindows64);
         //AssetDatabase.get
     }
 
@@ -164,23 +166,25 @@ public class BuildAssetBundle
     {
         string dir = GetBundleSaveDir(target);
 
+        Debug.Log(dir);
         Directory.CreateDirectory(Path.GetDirectoryName(dir));
 
         if (!Directory.Exists(dir))
             Debug.LogError("director is not exsist"+dir);
         BuildPipeline.BuildAssetBundles(dir, options,target);
+        SaveDependency();
 
     }
 
-    [MenuItem("Tools/test")]
+
     public static void SaveDependency()
     {
         string dir = GetBundleSaveDir(BuildTarget.StandaloneWindows64);
-        Debug.Log(dir.TrimEnd('/'));
+        //Debug.Log(dir.TrimEnd('/'));
         string depfile = dir.Substring(dir.TrimEnd('/').LastIndexOf("/") + 1);
-        Debug.Log(depfile.TrimEnd('/'));
+        //Debug.Log(depfile.TrimEnd('/'));
         string path = GetBundleSavePath(BuildTarget.StandaloneWindows64, depfile.TrimEnd('/'));
-        Debug.Log(path);
+       // Debug.Log(path);
         AssetBundle ab = AssetBundle.LoadFromFile(path);
 
         AssetBundleManifest mainfest = (AssetBundleManifest)ab.LoadAsset("AssetBundleManifest");
@@ -190,16 +194,19 @@ public class BuildAssetBundle
         //保存所有的依赖文件
         Dictionary<string, List<string>> dic = new Dictionary<string, List<string>>();
 
+        LoadOldDependency(BuildTarget.StandaloneWindows64, dic);
+
         foreach (string asset in mainfest.GetAllAssetBundles())
         {
             //Debug.Log("asset:"+asset);
             List<string> list = new List<string>();
-            string[] deps = mainfest.GetDirectDependencies(asset);
+            string[] deps = mainfest.GetDirectDependencies(asset); //获取每一个对象的直接依赖
             foreach (string dep in deps)
             {
                // Debug.Log("dep:"+dep);
                 list.Add(dep);
             }
+            //去重
             if (deps.Length > 0)
                 dic[asset] = list;
             else if (dic.ContainsKey(asset))
@@ -208,6 +215,37 @@ public class BuildAssetBundle
 
         WriteDependenceConfig(BuildTarget.StandaloneWindows64,dic);
 
+    }
+
+    static void LoadOldDependency(BuildTarget target, Dictionary<string, List<string>> dic)
+    {
+        string dataPath = GetBundleSavePath(target, "config/dependency");
+        if (!File.Exists(dataPath))
+        {
+            return;
+        }
+
+        FileStream fs = new FileStream(dataPath, FileMode.Open, FileAccess.Read);
+        BinaryReader br = new BinaryReader(fs);
+
+        int size = br.ReadInt32();
+        string resname;
+        string textureBundleName;
+
+        for (int i = 0; i < size; i++)
+        {
+            resname = br.ReadString();
+            int count = br.ReadInt32();
+            if (!dic.ContainsKey(resname))
+                dic[resname] = new List<string>();
+            for (int j = 0; j < count; ++j)
+            {
+                textureBundleName = br.ReadString();
+                dic[resname].Add(textureBundleName);
+            }
+        }
+        br.Close();
+        fs.Close();
     }
 
     static void WriteDependenceConfig(BuildTarget target, Dictionary<string, List<string>> m_Denpendcies)

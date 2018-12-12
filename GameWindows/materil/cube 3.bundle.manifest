@@ -1,15 +1,17 @@
 ManifestFileVersion: 0
-CRC: 3397922275
+CRC: 3133664691
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: d256b3dff4b6e0df2d4405b7d623ab40
+    Hash: 2bc80bffed18f9efbe6e0803f499306b
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 60a7cae25bfd71c49bd2c87b5187f6b5
+    Hash: d1ae6e26fb0b4d11fccd18da598542fa
 HashAppended: 0
 ClassTypes:
 - Class: 21
+  Script: {instanceID: 0}
+- Class: 28
   Script: {instanceID: 0}
 - Class: 48
   Script: {instanceID: 0}
@@ -17,3 +19,4 @@ Assets:
 - Assets/AssetBundleFloder/Character/Materials/Cube 3.mat
 Dependencies:
 - I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/shader/tets.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/texture/background_exp.bundle
