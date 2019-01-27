@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2022373001
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 42f3fbf2e1ce9ad2ddb1d62af58a1d97
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c1642440719609290a7e09a50a7286f4
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Ultimate Game Tools/AutomaticLOD/Data/3D Models/Pillar/Materials/Tex_Pillar_Normal.png
+Dependencies: []

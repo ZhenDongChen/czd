@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using SLua;
 using System.IO;
+using System;
 
 public class SluaManager : MonoBehaviour
 {
 
     public static SluaManager Instance;
 
-    public Dictionary<string, List<string>> ttt = new Dictionary<string, List<string>>(); 
+    public Dictionary<string, List<string>> ttt = new Dictionary<string, List<string>>();
+    public Action sceneOver;
 
     void Awake()
     {
@@ -25,19 +27,21 @@ public class SluaManager : MonoBehaviour
         if (SluaClass.instance.update != null)
            SluaClass.instance.update.call();
 
-        List<string> aaa = new List<string>();
-        aaa.Add("aaaa");
-        aaa.Add("bbb");
-        ttt.Add("aaaaa", aaa);
 
-        List<string> nnn = new List<string>();
+        // AssetBundleLoader.Instance.LoadUIAssetBundle("cube1", sceneOver);
+        //AssetBundleLoader.Instance.LoadUIAssetBundle("cube2", sceneOver);
+        //AssetBundleLoader.Instance.LoadUIAssetBundle("cube3", sceneOver);
+        //AssetBundleLoader.Instance.LoadUIAssetBundle("cube4", sceneOver);
+        //AssetBundleLoader.Instance.LoadUIAssetBundle("cube5", sceneOver);
+        //AssetBundleLoader.Instance.LoadUIAssetBundle("cube6", sceneOver);
+        //AssetBundleLoader.Instance.LoadUIAssetBundle("cube7", sceneOver);
+        //AssetBundleLoader.Instance.LoadUIAssetBundle("Athlete", sceneOver);
+        //AssetBundleLoader.Instance.LoadUIAssetBundle("Bridge", sceneOver);
+        AssetBundleLoader.Instance.LoadUIAssetBundle("pillar", sceneOver);
+        //AssetBundleLoader.Instance.LoadUIAssetBundle("Renata", sceneOver);
+        //AssetBundleLoader.Instance.LoadUIAssetBundle("Romana", sceneOver);
 
-        ttt.TryGetValue("aaaaa", out nnn);
-
-        foreach (var item in nnn)
-        {
-            Debug.Log(item);
-        }
-       AssetBundleLoader.Instance.LoadUIAssetBundle("cube1");
+        //AssetBundleLoader.Instance.LoadSceneBundle("testSlua", sceneOver);
     }
+
 }

@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1198772871
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 26777f37454d46004f583b74a292db07
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c1642440719609290a7e09a50a7286f4
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Ultimate Game Tools/MeshSimplify/Data/3D Models/Heads/Materials/Tex_Vanessa-Normal.png
+Dependencies: []

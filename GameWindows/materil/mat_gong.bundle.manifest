@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 345125497
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1fa186e253a28d9a66b84a20363bae0c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: d1ae6e26fb0b4d11fccd18da598542fa
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Ultimate Game Tools/AutomaticLOD/Data/3D Models/Torii/Materials/Mat_Gong.mat
+Dependencies:
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/texture/tex_dragon_normal.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/texture/tex_dragon_diffuse.bundle

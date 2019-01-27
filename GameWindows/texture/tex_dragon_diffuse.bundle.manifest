@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2719830203
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 60e31e6b88a0ef2c16b0f9083ce2a949
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c1642440719609290a7e09a50a7286f4
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Ultimate Game Tools/AutomaticLOD/Data/3D Models/Torii/Materials/Tex_Dragon_Diffuse.png
+Dependencies: []

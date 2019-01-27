@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 4086690033
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0632365bc1a17aca25970802f44a1785
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 31d6cfe0d16ae931b73c59d7e0c089c0
+HashAppended: 0
+ClassTypes: []
+Assets:
+- Assets/Scene/testSlua.unity
+Dependencies:
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/ui/cube.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/ui/cube1.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/ui/cube2.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/ui/cube3.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/ui/cube4.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/ui/cube5.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/ui/cube6.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/ui/cube7.bundle

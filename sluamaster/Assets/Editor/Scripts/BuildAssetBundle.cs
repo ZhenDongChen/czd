@@ -8,7 +8,7 @@ public class BuildAssetBundle
 
     public static Dictionary<string, string> allbundlesName = new Dictionary<string, string>();
 
-
+    static Dictionary<string, string> m_assetScenes = new Dictionary<string, string>();
     public static string StandardlizePath(string path)
     {
         string pathReplace = path.Replace(@"\", @"/");
@@ -20,6 +20,19 @@ public class BuildAssetBundle
     static void BuildAssetBundleWindows()
     {
         string targetBuildPath = Application.dataPath + "";
+    }
+
+    [MenuItem("Tools/BuildScence")]
+    static void BuildScenceAsset()
+    {
+        string targetPath = Application.dataPath + "/Scene";
+        GetAssetsRecursively(targetPath, "*.unity", "sence/", null, "bundle",ref m_assetScenes);
+        SetAssetbundleNameDenpency(m_assetScenes, new string[] { ".shader" }, "shader/");
+        SetAssetbundleNameDenpency(m_assetScenes, new string[] { ".mat" }, "Materil/");
+        SetAssetbundleNameDenpency(m_assetScenes, new string[] { ".jpg" }, "Texture/");
+        SetAssetbundleNameDenpency(m_assetScenes, new string[] { ".png" }, "Texture/");
+        SetAssetBundleName(m_assetScenes);
+        BuildAssetBundles(BuildTarget.StandaloneWindows64);
     }
 
     [MenuItem("Tools/Build Character")]
@@ -130,12 +143,12 @@ public class BuildAssetBundle
         foreach (KeyValuePair<string,string> item in assets)
         {
             string temp = "Assets" + item.Key.Substring(Application.dataPath.Length);
-            Debug.Log(temp);//Debug.Log(dependencies);
+           // Debug.Log(temp);//Debug.Log(dependencies);
             string[] dependencies = AssetDatabase.GetDependencies("Assets" + item.Key.Substring(Application.dataPath.Length));
             //Debug.Log(dependencies);
             foreach (string sdep in dependencies)
             {
-                Debug.Log("dependencies :"+sdep);
+               // Debug.Log("dependencies :"+sdep);
                 foreach (var format in depFormat)
                 {
                     if (sdep.EndsWith(format))
@@ -143,13 +156,14 @@ public class BuildAssetBundle
                        
                         import = AssetImporter.GetAtPath(sdep);
                         if (import == null) return;
-                        Debug.Log(string.Format("{0}{1}.bundle", depPath, Path.GetFileNameWithoutExtension(sdep.ToLower())));
+                       // Debug.Log(string.Format("{0}{1}.bundle", depPath, Path.GetFileNameWithoutExtension(sdep.ToLower())));
                         string bundleName = string.Format("{0}{1}.bundle", depPath, Path.GetFileNameWithoutExtension(sdep.ToLower()));
 
                         if (import != null)
                         {
                             Debug.Log(string.Format("{0}:{1}", format, bundleName));
                             import.assetBundleName = bundleName;
+                            
                         }
                     }
                 }

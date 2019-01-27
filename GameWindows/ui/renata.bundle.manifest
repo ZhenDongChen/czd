@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 2778037428
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 67df079a9699f1c97832f85d5f114b5e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 6b73cb1650a9636c5b37c5398ab52620
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 90d922b6196aab34697b544f28239ee2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e90785789c206fa4e951b02cff2c61c8, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetBundleFloder/Character/Renata.prefab
+Dependencies:
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/tsuiwang-difuse-baja.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/romana-difuse-baja.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/mat_renata.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/sammi-difuse-baja.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/difusevanessa-baja.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/renatadifusse-baja.bundle

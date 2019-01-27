@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 540055633
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a647ef5ca624240ed2182f6ee9c4613a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 60a7cae25bfd71c49bd2c87b5187f6b5
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Ultimate Game Tools/AutomaticLOD/Data/3D Models/Torii/Materials/kado.mat
+Dependencies: []

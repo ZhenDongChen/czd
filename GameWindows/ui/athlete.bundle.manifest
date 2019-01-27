@@ -1,0 +1,42 @@
+ManifestFileVersion: 0
+CRC: 280769993
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 97e6f4abce46e400f88c7f12eba8425c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 51a46b480e0c2bba1788c3f5a40e696b
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 90d922b6196aab34697b544f28239ee2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e90785789c206fa4e951b02cff2c61c8, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetBundleFloder/Character/Athlete.prefab
+Dependencies:
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/difuse.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/dientes.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/mat_athlete.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/ojolagrimal.bundle

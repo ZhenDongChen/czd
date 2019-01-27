@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 615069790
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e5868a5b192d97a4b140f0c303b55be1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 60a7cae25bfd71c49bd2c87b5187f6b5
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Ultimate Game Tools/MeshSimplify/Data/3D Models/Heads/Materials/TsuiWang-Difuse-Baja.mat
+Dependencies: []
