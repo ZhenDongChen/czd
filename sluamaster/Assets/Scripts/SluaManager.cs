@@ -22,22 +22,34 @@ public class SluaManager : MonoBehaviour
         if (SluaClass.instance.init != null)
             SluaClass.instance.init.call();
 
-        if (SluaClass.instance.update != null)
-           SluaClass.instance.update.call();
+       
 
-        List<string> aaa = new List<string>();
-        aaa.Add("aaaa");
-        aaa.Add("bbb");
-        ttt.Add("aaaaa", aaa);
+       // List<string> aaa = new List<string>();
+       // aaa.Add("aaaa");
+       // aaa.Add("bbb");
+       // ttt.Add("aaaaa", aaa);
 
-        List<string> nnn = new List<string>();
+       // List<string> nnn = new List<string>();
 
-        ttt.TryGetValue("aaaaa", out nnn);
+       // ttt.TryGetValue("aaaaa", out nnn);
 
-        foreach (var item in nnn)
+       // foreach (var item in nnn)
+       // {
+       //     Debug.Log(item);
+       // }
+       //AssetBundleLoader.Instance.LoadUIAssetBundle("cube1");
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.A))
         {
-            Debug.Log(item);
+            SluaClass.instance.Reset();
         }
-       AssetBundleLoader.Instance.LoadUIAssetBundle("cube1");
+
+        if (SluaClass.instance.update != null)
+            SluaClass.instance.update.call();
+        
+           //SluaClass.instance.update.call();
     }
 }

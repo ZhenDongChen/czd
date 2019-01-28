@@ -36,7 +36,7 @@ public class SluaClass
         return tempStr;
     }
     // Use this for initialization
-    void SluaStart()
+    public  void SluaStart()
     {
         string path = Application.dataPath + "/SluaTestCode";
         //DirectoryInfo directorInfo = new DirectoryInfo(path);
@@ -78,12 +78,18 @@ public class SluaClass
        init =  luaState.getFunction("init");
        update = luaState.getFunction("Update");
 
-      
-        
-
-
-
     }
+
+
+    public void Reset()
+    {
+        init = null;
+        update = null;
+        SluaStart();
+    }
+
+
+
 
     /// <summary>
     /// 获取目标文件所有的目录的信息
@@ -113,6 +119,7 @@ public class SluaClass
 
         foreach (DirectoryInfo item in allDirectorInfos)
         {
+            Debug.Log("File:"+item.Name);
             allFileDirectors_list.Add(item);
         }
         return allFileDirectors_list;
