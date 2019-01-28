@@ -1,0 +1,19 @@
+ManifestFileVersion: 0
+CRC: 84134905
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6e21ca0cfd8b0384cbeb0bab34de1bb1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 60a7cae25bfd71c49bd2c87b5187f6b5
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Ultimate Game Tools/AutomaticLOD/Data/3D Models/Pillar/Materials/Bitmap2Material_Diffuse.mat
+- Assets/Ultimate Game Tools/AutomaticLOD/Data/3D Models/Bridge/Materials/Bitmap2Material_Diffuse.mat
+Dependencies: []

@@ -1,0 +1,50 @@
+ManifestFileVersion: 0
+CRC: 3684123108
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 968abc91c08c7876b56cc8f72e1eab3e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 6b73cb1650a9636c5b37c5398ab52620
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 90d922b6196aab34697b544f28239ee2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e90785789c206fa4e951b02cff2c61c8, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetBundleFloder/Character/Car.prefab
+Dependencies:
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/m_mirrors.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/floor.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/mustang_parts.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/mat_lightsglass.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/mat_base.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/mat_darkglass.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/mat_mirrors.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/mat_body.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/m_darkglass.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/body.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/tires_diffuse.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/21 - default.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/base.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/mat_tires.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/mat_floor.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/m_lights_glass.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/skydome.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/mat_bodyparts.bundle

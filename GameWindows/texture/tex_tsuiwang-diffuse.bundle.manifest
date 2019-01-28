@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 356063725
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4ba39433ada4b05721d8a804e8641f69
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c1642440719609290a7e09a50a7286f4
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Ultimate Game Tools/MeshSimplify/Data/3D Models/Heads/Materials/Tex_TsuiWang-Diffuse.png
+Dependencies: []

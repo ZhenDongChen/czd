@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1108091784
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9421b6373d290b35a53b2e09b2450bca
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c1642440719609290a7e09a50a7286f4
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Ultimate Game Tools/AutomaticLOD/Data/3D Models/Torii/Materials/Tex_Dragon_Normal.png
+Dependencies: []

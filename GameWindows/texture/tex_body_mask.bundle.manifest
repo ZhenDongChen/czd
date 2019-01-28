@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2476181849
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 840175e7a8c1ef89020cca6e1f96392e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c1642440719609290a7e09a50a7286f4
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Ultimate Game Tools/MeshSimplify/Data/3D Models/Car/Materials/Tex_Body_Mask.png
+Dependencies: []

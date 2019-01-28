@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 540175311
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 14bcac720462ea4dbcd47f1cde5c4cc7
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 60a7cae25bfd71c49bd2c87b5187f6b5
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Ultimate Game Tools/AutomaticLOD/Data/3D Models/Torii/Materials/07 - Default.mat
+Dependencies: []

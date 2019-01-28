@@ -1,0 +1,14 @@
+ManifestFileVersion: 0
+CRC: 928363218
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f93d863f62f0bca1831c595204f29e2e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 31d6cfe0d16ae931b73c59d7e0c089c0
+HashAppended: 0
+ClassTypes: []
+Assets:
+- Assets/Scene/testLOD.unity
+Dependencies: []

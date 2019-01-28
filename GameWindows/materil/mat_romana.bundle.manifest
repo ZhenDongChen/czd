@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 4188720272
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2e24caecd207de82b9f43203aaf378a0
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: d1ae6e26fb0b4d11fccd18da598542fa
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Ultimate Game Tools/MeshSimplify/Data/3D Models/Heads/Materials/Mat_Romana.mat
+Dependencies:
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/texture/tex_romana-normal.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/texture/tex_romana-diffuse.bundle

@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 3376859707
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f03d96f9a2ea7179e09373d038f46942
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 60a7cae25bfd71c49bd2c87b5187f6b5
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Ultimate Game Tools/MeshSimplify/Data/3D Models/Car/Materials/base.mat
+Dependencies: []

@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 2503021673
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1af28e7fd4eb0af8e6b8900a459ad4f6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 60a7cae25bfd71c49bd2c87b5187f6b5
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Ultimate Game Tools/MeshSimplify/Data/3D Models/Car/Materials/floor.mat
+Dependencies: []

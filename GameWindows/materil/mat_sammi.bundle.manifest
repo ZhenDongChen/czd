@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 186411562
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 667146d2278e5f7a7dffe60cb276713e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: d1ae6e26fb0b4d11fccd18da598542fa
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Ultimate Game Tools/MeshSimplify/Data/3D Models/Heads/Materials/Mat_Sammi.mat
+Dependencies:
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/texture/tex_sammi-diffuse.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/texture/tex_sammi-normal.bundle

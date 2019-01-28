@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3058645003
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: be3267a20b674eb8e8da605d3b78f671
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c1642440719609290a7e09a50a7286f4
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Ultimate Game Tools/AutomaticLOD/Data/3D Models/Torii/Materials/Tex_Gate_Diffuse.png
+Dependencies: []

@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 2123010172
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9f8037318f0c750a77faa9f4d03fe406
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: d1ae6e26fb0b4d11fccd18da598542fa
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Ultimate Game Tools/MeshSimplify/Data/3D Models/Car/Materials/Mat_Base.mat
+Dependencies:
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/texture/tex_base_diffuse.bundle

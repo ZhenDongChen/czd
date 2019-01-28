@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 3481323921
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 65806f32bd4c85e393cbbbf60a62fa3b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 60a7cae25bfd71c49bd2c87b5187f6b5
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Ultimate Game Tools/AutomaticLOD/Data/3D Models/Torii/Materials/Mat_Lines.mat
+Dependencies: []

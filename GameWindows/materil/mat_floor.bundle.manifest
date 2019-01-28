@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 530270712
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3c9e0609ffac802d2d50d07a57fd4767
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: d1ae6e26fb0b4d11fccd18da598542fa
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Ultimate Game Tools/MeshSimplify/Data/3D Models/Car/Materials/Mat_Floor.mat
+Dependencies:
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/texture/tex_floor_normal.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/texture/tex_floor_diffuse.bundle

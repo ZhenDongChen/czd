@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2116512515
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 14074a7e745963f1c3cf70411fcf0083
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c1642440719609290a7e09a50a7286f4
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Ultimate Game Tools/AutomaticLOD/Data/3D Models/Athlete/Materials/Tex_Athlete_Diffuse.png
+Dependencies: []

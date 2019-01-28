@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1661384822
+CRC: 937332292
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -79,3 +79,357 @@ AssetBundleManifest:
     Info_19:
       Name: texture/background_exchange.bundle
       Dependencies: {}
+    Info_20:
+      Name: sence/testbundle.bundle
+      Dependencies: {}
+    Info_21:
+      Name: sence/testlod.bundle
+      Dependencies: {}
+    Info_22:
+      Name: sence/testslua.bundle
+      Dependencies:
+        Dependency_0: ui/cube.bundle
+        Dependency_1: ui/cube1.bundle
+        Dependency_2: ui/cube2.bundle
+        Dependency_3: ui/cube3.bundle
+        Dependency_4: ui/cube4.bundle
+        Dependency_5: ui/cube5.bundle
+        Dependency_6: ui/cube6.bundle
+        Dependency_7: ui/cube7.bundle
+    Info_23:
+      Name: sence/testscence.bundle
+      Dependencies: {}
+    Info_24:
+      Name: materil/difuse.bundle
+      Dependencies: {}
+    Info_25:
+      Name: materil/dientes.bundle
+      Dependencies: {}
+    Info_26:
+      Name: materil/mat_athlete.bundle
+      Dependencies:
+        Dependency_0: texture/tex_atlhete_normal.bundle
+        Dependency_1: texture/tex_athlete_diffuse.bundle
+    Info_27:
+      Name: materil/ojolagrimal.bundle
+      Dependencies: {}
+    Info_28:
+      Name: materil/bitmap2material_diffuse.bundle
+      Dependencies: {}
+    Info_29:
+      Name: materil/mat_bridge.bundle
+      Dependencies:
+        Dependency_0: texture/tex_bridge_diffuse.bundle
+        Dependency_1: texture/tex_bridge_normal.bundle
+    Info_30:
+      Name: materil/m_mirrors.bundle
+      Dependencies: {}
+    Info_31:
+      Name: materil/floor.bundle
+      Dependencies: {}
+    Info_32:
+      Name: materil/mustang_parts.bundle
+      Dependencies: {}
+    Info_33:
+      Name: materil/mat_lightsglass.bundle
+      Dependencies: {}
+    Info_34:
+      Name: materil/mat_base.bundle
+      Dependencies:
+        Dependency_0: texture/tex_base_diffuse.bundle
+    Info_35:
+      Name: materil/mat_darkglass.bundle
+      Dependencies: {}
+    Info_36:
+      Name: materil/mat_mirrors.bundle
+      Dependencies: {}
+    Info_37:
+      Name: materil/mat_body.bundle
+      Dependencies:
+        Dependency_0: texture/tex_body_diffuse.bundle
+        Dependency_1: texture/tex_body_mask.bundle
+    Info_38:
+      Name: materil/m_darkglass.bundle
+      Dependencies: {}
+    Info_39:
+      Name: materil/body.bundle
+      Dependencies: {}
+    Info_40:
+      Name: materil/tires_diffuse.bundle
+      Dependencies: {}
+    Info_41:
+      Name: materil/21 - default.bundle
+      Dependencies: {}
+    Info_42:
+      Name: materil/base.bundle
+      Dependencies: {}
+    Info_43:
+      Name: materil/mat_tires.bundle
+      Dependencies:
+        Dependency_0: texture/tex_tires_diffuse.bundle
+        Dependency_1: texture/tex_tires_normal.bundle
+    Info_44:
+      Name: materil/mat_floor.bundle
+      Dependencies:
+        Dependency_0: texture/tex_floor_normal.bundle
+        Dependency_1: texture/tex_floor_diffuse.bundle
+    Info_45:
+      Name: materil/m_lights_glass.bundle
+      Dependencies: {}
+    Info_46:
+      Name: materil/skydome.bundle
+      Dependencies: {}
+    Info_47:
+      Name: materil/mat_bodyparts.bundle
+      Dependencies:
+        Dependency_0: texture/tex_parts.bundle
+    Info_48:
+      Name: materil/mat_pillar.bundle
+      Dependencies:
+        Dependency_0: texture/tex_pillar_normal.bundle
+        Dependency_1: texture/tex_pillar_diffuse.bundle
+    Info_49:
+      Name: materil/tsuiwang-difuse-baja.bundle
+      Dependencies: {}
+    Info_50:
+      Name: materil/romana-difuse-baja.bundle
+      Dependencies: {}
+    Info_51:
+      Name: materil/mat_renata.bundle
+      Dependencies:
+        Dependency_0: texture/tex_renata-diffuse.bundle
+        Dependency_1: texture/tex_renata-normal.bundle
+    Info_52:
+      Name: materil/sammi-difuse-baja.bundle
+      Dependencies: {}
+    Info_53:
+      Name: materil/difusevanessa-baja.bundle
+      Dependencies: {}
+    Info_54:
+      Name: materil/renatadifusse-baja.bundle
+      Dependencies: {}
+    Info_55:
+      Name: materil/mat_romana.bundle
+      Dependencies:
+        Dependency_0: texture/tex_romana-normal.bundle
+        Dependency_1: texture/tex_romana-diffuse.bundle
+    Info_56:
+      Name: materil/mat_sammi.bundle
+      Dependencies:
+        Dependency_0: texture/tex_sammi-diffuse.bundle
+        Dependency_1: texture/tex_sammi-normal.bundle
+    Info_57:
+      Name: materil/kado.bundle
+      Dependencies: {}
+    Info_58:
+      Name: materil/778_tid_01_marvin_tutorial.bundle
+      Dependencies: {}
+    Info_59:
+      Name: materil/mat_gate.bundle
+      Dependencies:
+        Dependency_0: texture/tex_gate_diffuse.bundle
+        Dependency_1: texture/tex_gate_normal.bundle
+    Info_60:
+      Name: materil/07 - default.bundle
+      Dependencies: {}
+    Info_61:
+      Name: materil/mat_gong.bundle
+      Dependencies:
+        Dependency_0: texture/tex_dragon_normal.bundle
+        Dependency_1: texture/tex_dragon_diffuse.bundle
+    Info_62:
+      Name: materil/mat_lines.bundle
+      Dependencies: {}
+    Info_63:
+      Name: materil/mat_tsuiwang.bundle
+      Dependencies:
+        Dependency_0: texture/tex_tsuiwang-diffuse.bundle
+        Dependency_1: texture/tex_tsuiwang-normal.bundle
+    Info_64:
+      Name: materil/mat_vanessa.bundle
+      Dependencies:
+        Dependency_0: texture/tex_vanessa-normal.bundle
+        Dependency_1: texture/tex_vanessa-diffuse.bundle
+    Info_65:
+      Name: texture/tex_atlhete_normal.bundle
+      Dependencies: {}
+    Info_66:
+      Name: texture/tex_athlete_diffuse.bundle
+      Dependencies: {}
+    Info_67:
+      Name: texture/tex_bridge_diffuse.bundle
+      Dependencies: {}
+    Info_68:
+      Name: texture/tex_bridge_normal.bundle
+      Dependencies: {}
+    Info_69:
+      Name: texture/tex_floor_normal.bundle
+      Dependencies: {}
+    Info_70:
+      Name: texture/tex_floor_diffuse.bundle
+      Dependencies: {}
+    Info_71:
+      Name: texture/tex_body_diffuse.bundle
+      Dependencies: {}
+    Info_72:
+      Name: texture/tex_body_mask.bundle
+      Dependencies: {}
+    Info_73:
+      Name: texture/tex_parts.bundle
+      Dependencies: {}
+    Info_74:
+      Name: texture/tex_tires_diffuse.bundle
+      Dependencies: {}
+    Info_75:
+      Name: texture/tex_tires_normal.bundle
+      Dependencies: {}
+    Info_76:
+      Name: texture/tex_base_diffuse.bundle
+      Dependencies: {}
+    Info_77:
+      Name: texture/tex_pillar_normal.bundle
+      Dependencies: {}
+    Info_78:
+      Name: texture/tex_pillar_diffuse.bundle
+      Dependencies: {}
+    Info_79:
+      Name: texture/tex_renata-diffuse.bundle
+      Dependencies: {}
+    Info_80:
+      Name: texture/tex_renata-normal.bundle
+      Dependencies: {}
+    Info_81:
+      Name: texture/tex_romana-normal.bundle
+      Dependencies: {}
+    Info_82:
+      Name: texture/tex_romana-diffuse.bundle
+      Dependencies: {}
+    Info_83:
+      Name: texture/tex_sammi-diffuse.bundle
+      Dependencies: {}
+    Info_84:
+      Name: texture/tex_sammi-normal.bundle
+      Dependencies: {}
+    Info_85:
+      Name: texture/tex_dragon_normal.bundle
+      Dependencies: {}
+    Info_86:
+      Name: texture/tex_gate_diffuse.bundle
+      Dependencies: {}
+    Info_87:
+      Name: texture/tex_dragon_diffuse.bundle
+      Dependencies: {}
+    Info_88:
+      Name: texture/tex_gate_normal.bundle
+      Dependencies: {}
+    Info_89:
+      Name: texture/tex_tsuiwang-diffuse.bundle
+      Dependencies: {}
+    Info_90:
+      Name: texture/tex_tsuiwang-normal.bundle
+      Dependencies: {}
+    Info_91:
+      Name: texture/tex_vanessa-normal.bundle
+      Dependencies: {}
+    Info_92:
+      Name: texture/tex_vanessa-diffuse.bundle
+      Dependencies: {}
+    Info_93:
+      Name: ui/athlete.bundle
+      Dependencies:
+        Dependency_0: materil/difuse.bundle
+        Dependency_1: materil/dientes.bundle
+        Dependency_2: materil/mat_athlete.bundle
+        Dependency_3: materil/ojolagrimal.bundle
+    Info_94:
+      Name: ui/bridge.bundle
+      Dependencies:
+        Dependency_0: materil/bitmap2material_diffuse.bundle
+        Dependency_1: materil/mat_bridge.bundle
+    Info_95:
+      Name: ui/car.bundle
+      Dependencies:
+        Dependency_0: materil/m_mirrors.bundle
+        Dependency_1: materil/floor.bundle
+        Dependency_2: materil/mustang_parts.bundle
+        Dependency_3: materil/mat_lightsglass.bundle
+        Dependency_4: materil/mat_base.bundle
+        Dependency_5: materil/mat_darkglass.bundle
+        Dependency_6: materil/mat_mirrors.bundle
+        Dependency_7: materil/mat_body.bundle
+        Dependency_8: materil/m_darkglass.bundle
+        Dependency_9: materil/body.bundle
+        Dependency_10: materil/tires_diffuse.bundle
+        Dependency_11: materil/21 - default.bundle
+        Dependency_12: materil/base.bundle
+        Dependency_13: materil/mat_tires.bundle
+        Dependency_14: materil/mat_floor.bundle
+        Dependency_15: materil/m_lights_glass.bundle
+        Dependency_16: materil/skydome.bundle
+        Dependency_17: materil/mat_bodyparts.bundle
+    Info_96:
+      Name: ui/pillar.bundle
+      Dependencies:
+        Dependency_0: materil/bitmap2material_diffuse.bundle
+        Dependency_1: materil/mat_pillar.bundle
+    Info_97:
+      Name: ui/renata.bundle
+      Dependencies:
+        Dependency_0: materil/tsuiwang-difuse-baja.bundle
+        Dependency_1: materil/romana-difuse-baja.bundle
+        Dependency_2: materil/mat_renata.bundle
+        Dependency_3: materil/sammi-difuse-baja.bundle
+        Dependency_4: materil/difusevanessa-baja.bundle
+        Dependency_5: materil/renatadifusse-baja.bundle
+    Info_98:
+      Name: ui/romana.bundle
+      Dependencies:
+        Dependency_0: materil/tsuiwang-difuse-baja.bundle
+        Dependency_1: materil/romana-difuse-baja.bundle
+        Dependency_2: materil/sammi-difuse-baja.bundle
+        Dependency_3: materil/difusevanessa-baja.bundle
+        Dependency_4: materil/renatadifusse-baja.bundle
+        Dependency_5: materil/mat_romana.bundle
+    Info_99:
+      Name: ui/sammi.bundle
+      Dependencies:
+        Dependency_0: materil/tsuiwang-difuse-baja.bundle
+        Dependency_1: materil/romana-difuse-baja.bundle
+        Dependency_2: materil/sammi-difuse-baja.bundle
+        Dependency_3: materil/difusevanessa-baja.bundle
+        Dependency_4: materil/renatadifusse-baja.bundle
+        Dependency_5: materil/mat_sammi.bundle
+    Info_100:
+      Name: ui/torii.bundle
+      Dependencies:
+        Dependency_0: materil/kado.bundle
+        Dependency_1: materil/778_tid_01_marvin_tutorial.bundle
+        Dependency_2: materil/mat_gate.bundle
+        Dependency_3: materil/07 - default.bundle
+        Dependency_4: materil/mat_gong.bundle
+        Dependency_5: materil/mat_lines.bundle
+    Info_101:
+      Name: ui/toriinogong.bundle
+      Dependencies:
+        Dependency_0: materil/kado.bundle
+        Dependency_1: materil/778_tid_01_marvin_tutorial.bundle
+        Dependency_2: materil/mat_gate.bundle
+        Dependency_3: materil/07 - default.bundle
+    Info_102:
+      Name: ui/tsuiwang.bundle
+      Dependencies:
+        Dependency_0: materil/tsuiwang-difuse-baja.bundle
+        Dependency_1: materil/romana-difuse-baja.bundle
+        Dependency_2: materil/sammi-difuse-baja.bundle
+        Dependency_3: materil/difusevanessa-baja.bundle
+        Dependency_4: materil/renatadifusse-baja.bundle
+        Dependency_5: materil/mat_tsuiwang.bundle
+    Info_103:
+      Name: ui/vanessa.bundle
+      Dependencies:
+        Dependency_0: materil/tsuiwang-difuse-baja.bundle
+        Dependency_1: materil/romana-difuse-baja.bundle
+        Dependency_2: materil/sammi-difuse-baja.bundle
+        Dependency_3: materil/difusevanessa-baja.bundle
+        Dependency_4: materil/renatadifusse-baja.bundle
+        Dependency_5: materil/mat_vanessa.bundle

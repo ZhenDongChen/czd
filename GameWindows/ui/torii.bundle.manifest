@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 2501506658
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a7c9416673670906bef75fdbda58ffa1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 6b73cb1650a9636c5b37c5398ab52620
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 90d922b6196aab34697b544f28239ee2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e90785789c206fa4e951b02cff2c61c8, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetBundleFloder/Character/Torii.prefab
+Dependencies:
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/kado.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/778_tid_01_marvin_tutorial.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/mat_gate.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/07 - default.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/mat_gong.bundle
+- I:/UnityProject/czd/sluamaster/Assets/../../GameWindows/materil/mat_lines.bundle
